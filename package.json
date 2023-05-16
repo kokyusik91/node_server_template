@@ -1,0 +1,43 @@
+{
+  "name": "node_server_template",
+  "version": "1.0.0",
+  "description": "template of node_server using express.js",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc --allowJs",
+    "start": "node ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typecheck": "typecheck",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q ./dist/index.js\""
+  },
+  "keywords": [
+    "express.js",
+    "node.js"
+  ],
+  "author": "jamsilcrop",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/morgan": "^1.9.4",
+    "@types/node": "^20.1.5",
+    "@typescript-eslint/eslint-plugin": "^5.59.6",
+    "@typescript-eslint/parser": "^5.59.6",
+    "concurrently": "^8.0.1",
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.8",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
